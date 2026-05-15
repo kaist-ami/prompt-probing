@@ -1,0 +1,6 @@
+# GPT-4V model configuration
+# Set OPENAI_API_KEY environment variable before use.
+model:
+  name: gpt-4-vision-preview
+  max_new_tokens: 256
+  detail: high  # OpenAI image detail level: "low" or "high"

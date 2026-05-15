@@ -1,0 +1,8 @@
+# LLaVA model configuration
+model:
+  name: llava-1.5-7b
+  hf_id: llava-hf/llava-1.5-7b-hf
+  device: cuda
+  max_new_tokens: 256
+  load_in_4bit: false
+  torch_dtype: float16
