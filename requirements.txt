@@ -1,0 +1,27 @@
+# Core dependencies
+numpy>=1.24
+Pillow>=10.0
+
+# Deep learning (install the CUDA-enabled build for GPU support)
+torch>=2.0
+torchvision>=0.15
+
+# HuggingFace ecosystem (open-source MLLMs)
+transformers>=4.37
+accelerate>=0.26
+bitsandbytes>=0.41       # optional: 4-bit quantisation
+
+# OpenAI API (GPT-4V / GPT-4o)
+openai>=1.10
+
+# Visualisation
+matplotlib>=3.7
+seaborn>=0.12
+
+# Configuration management
+PyYAML>=6.0
+omegaconf>=2.3
+
+# Testing
+pytest>=7.4
+pytest-cov>=4.1

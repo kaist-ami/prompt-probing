@@ -1,0 +1,30 @@
+# Default configuration for prompt probing experiments
+
+# Model settings
+model:
+  name: llava-1.5-7b
+  device: cuda
+  max_new_tokens: 256
+  load_in_4bit: false
+
+# Dataset settings
+dataset:
+  name: things
+  root: data/things
+  attribute: size
+  split: test
+
+# Prompt settings
+prompt:
+  type: ordinal          # one of: direct, ordinal, contrastive, chain
+  subtype: single        # one of: single, pairwise, list
+
+# Evaluation settings
+evaluation:
+  metric: kendall_tau    # one of: kendall_tau, spearman_rho
+  save_results: true
+  output_dir: results/
+
+# Logging
+logging:
+  level: INFO

@@ -1,0 +1,7 @@
+# InstructBLIP model configuration
+model:
+  name: instructblip-vicuna-7b
+  hf_id: Salesforce/instructblip-vicuna-7b
+  device: cuda
+  max_new_tokens: 256
+  torch_dtype: float16
